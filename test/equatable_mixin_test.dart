@@ -128,7 +128,7 @@ class LegacyEqualityOverride {
   final int x;
 
   @override
-  bool operator ==(dynamic o) {
+  bool operator ==(Object o) {
     if (identical(this, o)) return true;
 
     return o is LegacyEqualityOverride && o.x == x;
